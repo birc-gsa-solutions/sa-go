@@ -8,6 +8,14 @@ Once you have constructed a suffix array you should use it to implement a binary
 
 Implement the suffix array construction and the exact pattern matching in a single program called `sa`.  The program should take the same options as in project 1, so `sa genome.fa reads.fq`. The program should output (almost) the same Simple-SAM file. Because a search in a suffix array is not done from the start to the end of the string the output might be in a different order, but if you sort the output from the previous project and for this program, they should be identical.
 
+If you start from the sample code provided--found in `progs`, you can build the tool using
+
+```bash
+> GOBIN=$PWD go install ./...
+```
+
+which will put `sa` in the root of the repository--right where you want it.
+
 ## Evaluation
 
 Once you have implemented the `sa` program (and tested it to the best of your abilities) fill out the report below, and notify me that your pull request is ready for review.
